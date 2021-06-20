@@ -14,7 +14,7 @@ client.once('ready', () => {
                 }
             }
         )
-    }, 150000);
+    }, 15000);
 });
 
 client.on('message', ( message ) => {
