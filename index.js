@@ -4,16 +4,20 @@ const Base64 = require('base-64')
 const client = new Discord.Client();
 const { prefix, authToken } = require('./config.json');
 
+function updatePresence() {
+    client.user.setPresence(
+        {
+            activity: {
+                name: 'with Base64 | ' + client.guilds.cache.size + (client.guilds.cache.size == 1 ? ' Server!' : ' Servers!'),
+                type: 'PLAYING'
+            }
+        }
+    );
+}
+
 client.once('ready', () => {
     setInterval(() => {
-        client.user.setPresence(
-            {
-                activity: {
-                    name: 'with Base64 | ' + client.guilds.cache.size + (client.guilds.cache.size == 1 ? ' Server!' : ' Servers!'),
-                    type: 'PLAYING'
-                }
-            }
-        )
+        updatePresence();
     }, 15000);
 });
 
