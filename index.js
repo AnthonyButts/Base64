@@ -5,14 +5,16 @@ const client = new Discord.Client();
 const { prefix, authToken } = require('./config.json');
 
 client.once('ready', () => {
-    client.user.setPresence(
-        {
-            activity: {
-                name: 'with Base64 | ' + client.guilds.cache.size + (client.guilds.cache.size == 1 ? ' Server!' : ' Servers!'),
-                type: 'PLAYING'
+    setInterval(() => {
+        client.user.setPresence(
+            {
+                activity: {
+                    name: 'with Base64 | ' + client.guilds.cache.size + (client.guilds.cache.size == 1 ? ' Server!' : ' Servers!'),
+                    type: 'PLAYING'
+                }
             }
-        }
-    )
+        )
+    }, 150000);
 });
 
 client.on('message', ( message ) => {
