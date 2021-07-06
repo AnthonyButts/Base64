@@ -96,7 +96,7 @@ client.on('message', ( message ) => {
                 new Discord.MessageEmbed()
                     .setTitle('List of Commands')
                     .setColor('#D12127')
-                    .setDescription('**Base64**:\n∟ `b!encode <message>` - Encodes a message in Base64.\n∟ `b!decode <message>` - Decodes a message in Base64.\n\n**General**\n∟ `b!help` - Shows you this message.\n∟ `b!info` - Shows you info about the bot.\n\n**Help**:\n∟ `b!support` - Gives you invite link to support server.')
+                    .setDescription('**Base64**:\n∟ `b!encode <message>` - Encodes a message in Base64.\n∟ `b!decode <message>` - Decodes a message in Base64.\n\n**General**\n∟ `b!help` - Shows you this message.\n∟ `b!info` - Shows you info about the bot.\n\n**Misc**:\n∟ `b!support` - Gives you invite link to support server.\n∟ `b!invite` - Gives you link to invite Base64 to your server.')
                     .setFooter('Base64')
                     .setTimestamp()
             )
@@ -128,7 +128,20 @@ client.on('message', ( message ) => {
                     .setTimestamp()
             )
 
-        break
+        break;
+
+        case 'invite':
+
+            message.channel.send(
+                new Discord.MessageEmbed()
+                    .setTitle('Add Base64 To Server')
+                    .setColor('#D12127')
+                    .setDescription('**To add Base64 to your server, click ** [here](https://discord.com/oauth2/authorize?client_id=855973558592471090&permissions=67584&scope=bot).')
+                    .setFooter('Base64')
+                    .setTimestamp()
+            )
+
+        break;
     }
 
 });
