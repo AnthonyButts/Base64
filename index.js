@@ -122,7 +122,7 @@ client.on('message', ( message ) => {
                 new Discord.MessageEmbed()
                     .setTitle('Support Discord Server')
                     .setColor('#D12127')
-                    .setDescription('**If you need help with using the bot, or support click ** [here]b!(https://discord.com/invite/YQz3zFq/).')
+                    .setDescription('**If you need help with using the bot, or support click ** [here](https://discord.com/invite/YQz3zFq/).')
                     .setImage('https://i.ibb.co/XyCxfCL/support-image.jpg')
                     .setFooter('Base64')
                     .setTimestamp()
