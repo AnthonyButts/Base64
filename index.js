@@ -96,7 +96,7 @@ client.on('message', ( message ) => {
                 new Discord.MessageEmbed()
                     .setTitle('List of Commands')
                     .setColor('#D12127')
-                    .setDescription('**Base64**:\n∟ `b!encode <message>` - Encodes a message in Base64.\n∟ `b!decode <message>` - Decodes a message in Base64.\n\n**General**\n∟ `b!help` - Shows you this message.\n∟ `b!info` - Shows you info about the bot.')
+                    .setDescription('**Base64**:\n∟ `b!encode <message>` - Encodes a message in Base64.\n∟ `b!decode <message>` - Decodes a message in Base64.\n\n**General**\n∟ `b!help` - Shows you this message.\n∟ `b!info` - Shows you info about the bot.\n\n**Help**:\n∟ `b!support` - Gives you invite link to support server.')
                     .setFooter('Base64')
                     .setTimestamp()
             )
@@ -115,6 +115,20 @@ client.on('message', ( message ) => {
             )        
 
         break;
+
+        case 'support':
+            
+            message.channel.send(
+                new Discord.MessageEmbed()
+                    .setTitle('Support Discord Server')
+                    .setColor('#D12127')
+                    .setDescription('**If you need help with using the bot, or support click ** [here]b!(https://discord.com/invite/YQz3zFq/).')
+                    .setImage('https://i.ibb.co/XyCxfCL/support-image.jpg')
+                    .setFooter('Base64')
+                    .setTimestamp()
+            )
+
+        break
     }
 
 });
