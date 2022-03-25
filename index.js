@@ -109,7 +109,7 @@ client.on('message', ( message ) => {
                 new Discord.MessageEmbed()
                     .setTitle('Information')
                     .setColor('#D12127')
-                    .setDescription('∟ `b!` - Bot Prefix\n∟ `Klem#0965` - Bot Prefix\n')
+                    .setDescription('∟ `b!` - Bot Prefix\n∟ `Klem#9849` - Bot Developer\n')
                     .setFooter('Base64')
                     .setTimestamp()
             )        
