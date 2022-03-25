@@ -96,7 +96,7 @@ client.on('message', ( message ) => {
                 new Discord.MessageEmbed()
                     .setTitle('List of Commands')
                     .setColor('#D12127')
-                    .setDescription('**Base64**:\n∟ `b!encode <message>` - Encodes a message in Base64.\n∟ `b!decode <message>` - Decodes a message in Base64.\n\n**General**\n∟ `b!help` - Shows you this message.\n∟ `b!info` - Shows you info about the bot.\n\n**Misc**:\n∟ `b!support` - Gives you invite link to support server.\n∟ `b!invite` - Gives you link to invite Base64 to your server.')
+                    .setDescription('**Base64**\n∟ `b!encode <message>` - Encodes a message in Base64.\n∟ `b!decode <message>` - Decodes a message in Base64.\n\n**General**\n∟ `b!help` - Shows you this message.\n∟ `b!info` - Shows you info about the bot.\n\n**Misc**\n∟ `b!support` - Gives you invite link to support server.\n∟ `b!invite` - Gives you link to invite Base64 to your server.')
                     .setFooter('Base64')
                     .setTimestamp()
             )
